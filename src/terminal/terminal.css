@@ -1,0 +1,46 @@
+
+.terminal {
+/*  width: 500px;
+  height: 500px;*/
+/*  background-color: black;*/
+  color: white;
+  padding: 20px;
+}
+
+.done {
+  display: block !important;
+}
+
+#terminal_text p {
+  display: none; /* hide by default */
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.last-done {
+  display: block !important;
+}
+
+.last-done::after {
+    content: "I";
+    /*width: 5px;
+    height: 20px;
+    background: #fff;*/
+    color: white;
+    display: inline-block;
+    animation: cursor-blink 1.5s steps(2) infinite;
+}
+
+@keyframes cursor-blink {
+  0% {
+    opacity: 0;
+  }
+}
