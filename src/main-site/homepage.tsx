@@ -19,7 +19,7 @@ class Homepage extends React.Component {
 
         {/*terminal animation*/}
         <div className="App-header">
-          <Terminal lines={["Hello folks,", "today is a good day to die"]}/>
+          <Terminal lines={["Hello folks,", "today is a good day to die!"]}/>
         </div>
       </div>
     );

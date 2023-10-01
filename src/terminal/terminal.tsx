@@ -51,9 +51,9 @@ class Terminal extends React.Component<TerminalProps, TerminalState> {
       .line_${length} {
         white-space: nowrap;
         overflow: hidden;
-        border-right: .1em solid #999;
+        border-right: .2em solid #999;
         transform: translateY(-50%);
-        animation: typing ${length*0.15}s steps(${length}, end);
+        animation: typing ${length*0.1}s steps(${length}, end);
         display: block !important;
       }
     `
