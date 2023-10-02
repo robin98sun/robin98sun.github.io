@@ -19,7 +19,13 @@ class Homepage extends React.Component {
 
         {/*terminal animation*/}
         <div className="App-header">
-          <Terminal lines={["Hello folks,", "today is a good day to die!"]}/>
+          <Terminal 
+            prompt = "$"
+            stdout_lines={[
+              "Hello folks,", "today is a good day to die!", "have fun!",
+              "The second layer is our caret. Here we will perform two animations. The first one is a background-size animation similar to the text coloration since the caret needs to follow the text. The second one is a background-position animation to create the blinking effect.",
+            ]}
+          />
         </div>
       </div>
     );

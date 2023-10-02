@@ -1,18 +1,53 @@
-
-.terminal {
-/*  width: 500px;
-  height: 500px;*/
-/*  background-color: black;*/
-  color: white;
-  padding: 5px;
+/*
+  reference:
+  https://stackoverflow.com/questions/61299461/creating-a-mock-terminal-with-a-loop-to-delay-css-animations
+*/
+.wrapper {
+  display: grid;
+  place-items: left;
+  width: 100%;
+  margin: 20px;
 }
 
-.done {
-  display: block !important;
+.stdin-done {
+  display: inline-flex;
 }
 
-#terminal_text p {
-  display: none; /* hide by default */
+.stdout-done {
+  overflow-wrap: break-word;
+  white-space: initial;
+  margin-top: .1em;
+}
+
+.hide {
+  display: none
+}
+
+.char-done {
+  display: inline-flex;
+}
+
+.space-done {
+  display: inline-flex;
+  margin-right: .45em;
+}
+
+.typing-char {
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: .45em solid #999;
+/*  transform: translateY(-50%);*/
+  animation: typing 0.2s steps(1, end);
+  display: inline-flex ;
+}
+
+.typing-space {
+  white-space: nowrap;
+  overflow: hidden;
+  width: .45em;
+  border-right: .45em solid #999;
+  animation: typing 0.2s steps(1, end);
+  display: inline-flex ;
 }
 
 /* The typing effect */
@@ -25,17 +60,30 @@
   }
 }
 
-.last-done {
-  display: block !important;
+
+
+/*cursor*/
+
+.cursor {
+  display: inline-flex;
+  margin-right: .4em;
 }
 
-.last-done::after {
-    content: "I";
-    /*width: 5px;
-    height: 20px;*/
+.cursor-init::after {
+    content: "II";
     background: #fff;
     color: white;
     display: inline-block;
+    margin-left: .4em;
+    animation: cursor-blink 1.5s steps(2) 2;
+}
+
+.cursor-waiting::after {
+    content: "II";
+    background: #fff;
+    color: white;
+    display: inline-block;
+    margin-left: .4em;
     animation: cursor-blink 1.5s steps(2) infinite;
 }
 
@@ -44,3 +92,4 @@
     opacity: 0;
   }
 }
+
