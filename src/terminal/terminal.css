@@ -7,13 +7,19 @@
   place-items: left;
   width: 100%;
   margin: 20px;
+  
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.stdin-done {
+.stdin-show {
   display: inline-flex;
+  overflow-wrap: break-word;
+  white-space: initial;
+  margin-top: .1em;
 }
 
-.stdout-done {
+.stdout-show {
   overflow-wrap: break-word;
   white-space: initial;
   margin-top: .1em;
@@ -37,7 +43,7 @@
   overflow: hidden;
   border-right: .45em solid #999;
 /*  transform: translateY(-50%);*/
-  animation: typing 0.2s steps(1, end);
+  animation: typing 0.05s steps(1, end);
   display: inline-flex ;
 }
 
@@ -46,7 +52,7 @@
   overflow: hidden;
   width: .45em;
   border-right: .45em solid #999;
-  animation: typing 0.2s steps(1, end);
+  animation: typing 0.05s steps(1, end);
   display: inline-flex ;
 }
 
@@ -75,16 +81,25 @@
     color: white;
     display: inline-block;
     margin-left: .4em;
-    animation: cursor-blink 1.5s steps(2) 2;
+    animation: cursor-blink 0.8s steps(2) 3;
 }
 
-.cursor-waiting::after {
+.cursor-wait::after {
     content: "II";
     background: #fff;
     color: white;
     display: inline-block;
     margin-left: .4em;
-    animation: cursor-blink 1.5s steps(2) infinite;
+    animation: cursor-blink 0.8s steps(2) 2;
+}
+
+.cursor-infinite::after {
+    content: "II";
+    background: #fff;
+    color: white;
+    display: inline-block;
+    margin-left: .4em;
+    animation: cursor-blink 0.8s steps(2) infinite;
 }
 
 @keyframes cursor-blink {

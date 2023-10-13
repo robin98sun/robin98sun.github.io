@@ -1,35 +1,41 @@
 import React from 'react';
 // import logo from './logo.svg';
 import './homepage.css';
-import Terminal from '../terminal/terminal'
+import Stories from '../terminal/stories'
+import welcome_stories from '../static-data/welcome-story.json'
 
-class Homepage extends React.Component {
+
+
+
+class Homepage extends React.Component <any, any> {
 
     // constructor(props: any) {
     //   super(props)
     //   this.state = { 
-
     //   }
     // }
 
-  render() {
+    render() {
 
-    return (
-      <div className="Homepage">
 
-        {/*terminal animation*/}
-        <div className="App-header">
-          <Terminal 
-            prompt = "$"
-            stdout_lines={[
-              "Hello folks,", "today is a good day to die!", "have fun!",
-              "The second layer is our caret. Here we will perform two animations. The first one is a background-size animation similar to the text coloration since the caret needs to follow the text. The second one is a background-position animation to create the blinking effect.",
-            ]}
-          />
+      return (
+        <div className="Homepage">
+
+
+          {/*terminal animation*/}
+          <div className="background">
+              
+              <Stories
+                stories={welcome_stories}
+                containerClassName="stories"
+                disactive={false}
+                prompt={">"}
+              />
+
+          </div>
         </div>
-      </div>
-    );
-  }
+      );
+    }
 }
 
 export default Homepage;

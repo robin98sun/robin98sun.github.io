@@ -1,0 +1,18 @@
+[
+    {
+        "question": "Who am I?",
+        "answer": ["I'm a Computer Science PhD student in the ACES lab of UT Arlington, co-supervised by Dr. Hong Jiang and Dr. Hao Che. Currently my research focus on performance prediction and task scheduling on large-scale distributed systems."]
+    },
+    {
+        "question": "Where did I come from?",
+        "answer": ["I had been working in China as a system engineer for several years before joining ACES lab. More previously, I graduated from Fudan University and Shandong University with the Master degree and the Bachelor degree respectively, both in Computer Science."]
+    },
+    {
+        "question": "Where am I going?",
+        "answer": ["I'm looking for more in-depth research opportunities in the system area."]
+    },
+    {
+        "question": null,
+        "answer": ["For more questions, please email to: robin98sun@gmail.com"]
+    }
+]
