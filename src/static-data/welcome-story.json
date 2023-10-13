@@ -1,7 +1,7 @@
 [
     {
         "question": "Who am I?",
-        "answer": ["I'm a Computer Science PhD student in the ACES lab of UT Arlington, co-supervised by Dr. Hong Jiang and Dr. Hao Che. Currently my research focus on performance prediction and task scheduling on large-scale distributed systems."]
+        "answer": ["I'm a Computer Science PhD student in the ACES lab of UT Arlington, co-supervised by Dr. Hong Jiang and Dr. Hao Che. Currently my research focuses on performance prediction and task scheduling on large-scale distributed systems."]
     },
     {
         "question": "Where did I come from?",
